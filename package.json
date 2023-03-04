@@ -1,0 +1,22 @@
+{
+  "name": "twilio-server-sms3",
+  "version": "1.0.0",
+  "description": "Integration with twillio sms",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/dialogflow": "^5.5.0",
+    "@google-cloud/storage": "^4.7.0",
+    "dialogflow": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "pg": "^8.9.0",
+    "request": "^2.88.2",
+    "twilio": "^3.42.0"
+  }
+}
