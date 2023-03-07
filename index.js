@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const { Client } = require('pg');
-const db_url = process.env.DATABASE_URL;
+const db_url = "<DB_URL>"
 const new_client = new Client({
   connectionString: db_url,
   ssl: {
@@ -18,10 +18,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
-const projectId = process.env.projectId;
-const phoneNumber = process.env.phoneNumber;
-const accountSid = process.env.accountSid;
-const authToken = process.env.authToken;
+const projectId = '<PROJECT_ID>';
+const phoneNumber = "<PHONE_NUMBER>";
+const accountSid = '<ACCOUNT_SID>';
+const authToken = '<AUTH_TOKEN>';
 
 const client = require('twilio')(accountSid, authToken);
 const sessionClient = new dialogflowSessionClient(projectId);
